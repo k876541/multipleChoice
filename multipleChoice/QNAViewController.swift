@@ -117,7 +117,6 @@ class QNAViewController: UIViewController {
         //重新開始，所以清空imageView
         rightorwrong.image = nil
         startGame()
-        
     }
     /*
     // MARK: - Navigation

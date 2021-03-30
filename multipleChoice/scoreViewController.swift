@@ -9,20 +9,18 @@ import UIKit
 
 class scoreViewController: UIViewController {
 
-    var scores :Int!
-    
     @IBOutlet weak var showScoreLabel: UILabel!
-    
     @IBOutlet weak var answerImageView: UIImageView!
     
-    
+    var scores :Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         showScore()
     }
     
+    //判斷分數，並顯示圖片和成績。
     func showScore()  {
-        
         if scores == 100 {
             showScoreLabel.text = "你的分數是\(String(scores))，\n真是太棒了"
             answerImageView.image = UIImage(named: "moto safe drive")
